@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd
+    http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
+
+    <changeSet author="rian" id="2.0.0">
+    	<insert tableName="item">
+            <column name="name" value="Biskuit"/>
+            <column name="price" value="6000"/>
+            <column name="quantity" value="10"/>
+        </insert>
+        <insert tableName="item">
+            <column name="name" value="Chips"/>
+            <column name="price" value="8000"/>
+            <column name="quantity" value="10"/>
+        </insert>
+        <insert tableName="item">
+            <column name="name" value="Oreo"/>
+            <column name="price" value="10000"/>
+            <column name="quantity" value="10"/>
+        </insert>
+        <insert tableName="item">
+            <column name="name" value="Tango"/>
+            <column name="price" value="12000"/>
+            <column name="quantity" value="10"/>
+        </insert>
+        <insert tableName="item">
+            <column name="name" value="Cokelat"/>
+            <column name="price" value="15000"/>
+            <column name="quantity" value="10"/>
+        </insert>
+    </changeSet>
+    
+    <changeSet author="rian" id="2.1.0">
+    	<insert tableName="change">
+            <column name="denomination" value="1000"/>
+        </insert>
+        <insert tableName="change">
+            <column name="denomination" value="2000"/>
+        </insert>
+        <insert tableName="change">
+            <column name="denomination" value="5000"/>
+        </insert>
+        <insert tableName="change">
+            <column name="denomination" value="10000"/>
+        </insert>
+        <insert tableName="change">
+            <column name="denomination" value="20000"/>
+        </insert>
+    </changeSet>
+</databaseChangeLog>
